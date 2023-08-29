@@ -84,6 +84,15 @@ system_check()
 system_deps()
 {
 	echo
+	echo "[*] Sangjun's patched"
+	sudo apt-get update -y
+	sudo apt install curl git wget file zsh sudo vim libssl-dev libffi-dev build-essential libssl-dev libc6-i386 libc6-dbg gcc-multilib make gcc gdb -y
+	sduo apt install python git curl wget vim zsh gdb python3 python3-pip  -y
+	sudo apt install gawk bison flex openssl libssl-dev libelf-dev lz4 dwarves -y
+	sudo apt install qemu-utils qemu-system-x86 python3 python3-venv g++-mingw-w64-x86-64 zstd -y
+	sudo apt install python3 python3-venv -y
+	sudo apt install gawk bison flex openssl libssl-dev libelf-dev lz4 dwarves zstd -y
+
 	echo "[*] Installing essentials tools ..."
 	sudo apt-get install git make gcc bc libssl-dev pax-utils libelf-dev \
 		libgraphviz-dev gnuplot ruby libgtk-3-dev libc6-dev flex bison \
